@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  # Имя Service.
+  name: testapp-service
+spec:
+  selector:
+    # Этот Service перенаправит трафик на Pods с этим лейблом.
+    app: testapp
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080

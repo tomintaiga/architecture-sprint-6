@@ -1,0 +1,57 @@
+LAST SEEN   TYPE      REASON                         OBJECT                                     MESSAGE
+37m         Normal    Starting                       node/minikube                              Starting kubelet.
+37m         Normal    NodeHasSufficientMemory        node/minikube                              Node minikube status is now: NodeHasSufficientMemory
+37m         Normal    NodeHasNoDiskPressure          node/minikube                              Node minikube status is now: NodeHasNoDiskPressure
+37m         Normal    NodeHasSufficientPID           node/minikube                              Node minikube status is now: NodeHasSufficientPID
+37m         Normal    NodeAllocatableEnforced        node/minikube                              Updated Node Allocatable limit across pods
+37m         Normal    RegisteredNode                 node/minikube                              Node minikube event: Registered Node minikube in Controller
+37m         Normal    Starting                       node/minikube                              
+27m         Normal    Scheduled                      pod/testapp-deployment-5485756fb-r2dln     Successfully assigned default/testapp-deployment-5485756fb-r2dln to minikube
+27m         Normal    Pulling                        pod/testapp-deployment-5485756fb-r2dln     Pulling image "shestera/scaletestapp"
+27m         Normal    Pulled                         pod/testapp-deployment-5485756fb-r2dln     Successfully pulled image "shestera/scaletestapp" in 2.169s (2.169s including waiting). Image size: 10812245 bytes.
+27m         Normal    Created                        pod/testapp-deployment-5485756fb-r2dln     Created container testapp
+27m         Normal    Started                        pod/testapp-deployment-5485756fb-r2dln     Started container testapp
+21m         Normal    Killing                        pod/testapp-deployment-5485756fb-r2dln     Stopping container testapp
+27m         Normal    SuccessfulCreate               replicaset/testapp-deployment-5485756fb    Created pod: testapp-deployment-5485756fb-r2dln
+21m         Normal    SuccessfulDelete               replicaset/testapp-deployment-5485756fb    Deleted pod: testapp-deployment-5485756fb-r2dln
+21m         Normal    Scheduled                      pod/testapp-deployment-578f6f8b-rrwdr      Successfully assigned default/testapp-deployment-578f6f8b-rrwdr to minikube
+18m         Normal    Pulling                        pod/testapp-deployment-578f6f8b-rrwdr      Pulling image "shestera/scaletestapp"
+21m         Normal    Pulled                         pod/testapp-deployment-578f6f8b-rrwdr      Successfully pulled image "shestera/scaletestapp" in 3.522s (3.522s including waiting). Image size: 10812245 bytes.
+19m         Normal    Created                        pod/testapp-deployment-578f6f8b-rrwdr      Created container testapp
+19m         Normal    Started                        pod/testapp-deployment-578f6f8b-rrwdr      Started container testapp
+20m         Normal    Pulled                         pod/testapp-deployment-578f6f8b-rrwdr      Successfully pulled image "shestera/scaletestapp" in 2.84s (2.84s including waiting). Image size: 10812245 bytes.
+18m         Warning   BackOff                        pod/testapp-deployment-578f6f8b-rrwdr      Back-off restarting failed container testapp in pod testapp-deployment-578f6f8b-rrwdr_default(5567b210-810b-4791-95b2-daa4deac0cd1)
+19m         Normal    Pulled                         pod/testapp-deployment-578f6f8b-rrwdr      Successfully pulled image "shestera/scaletestapp" in 1.89s (1.89s including waiting). Image size: 10812245 bytes.
+19m         Normal    Pulled                         pod/testapp-deployment-578f6f8b-rrwdr      Successfully pulled image "shestera/scaletestapp" in 1.921s (1.921s including waiting). Image size: 10812245 bytes.
+18m         Normal    Pulled                         pod/testapp-deployment-578f6f8b-rrwdr      Successfully pulled image "shestera/scaletestapp" in 4.095s (5.362s including waiting). Image size: 10812245 bytes.
+20m         Normal    Scheduled                      pod/testapp-deployment-578f6f8b-z754p      Successfully assigned default/testapp-deployment-578f6f8b-z754p to minikube
+18m         Normal    Pulling                        pod/testapp-deployment-578f6f8b-z754p      Pulling image "shestera/scaletestapp"
+20m         Normal    Pulled                         pod/testapp-deployment-578f6f8b-z754p      Successfully pulled image "shestera/scaletestapp" in 4.979s (4.979s including waiting). Image size: 10812245 bytes.
+18m         Normal    Created                        pod/testapp-deployment-578f6f8b-z754p      Created container testapp
+19m         Normal    Started                        pod/testapp-deployment-578f6f8b-z754p      Started container testapp
+20m         Normal    Pulled                         pod/testapp-deployment-578f6f8b-z754p      Successfully pulled image "shestera/scaletestapp" in 2.347s (3.149s including waiting). Image size: 10812245 bytes.
+18m         Warning   BackOff                        pod/testapp-deployment-578f6f8b-z754p      Back-off restarting failed container testapp in pod testapp-deployment-578f6f8b-z754p_default(5b81f80f-27c9-4a20-b18a-d00b79f12aa5)
+19m         Normal    Pulled                         pod/testapp-deployment-578f6f8b-z754p      Successfully pulled image "shestera/scaletestapp" in 2.93s (2.93s including waiting). Image size: 10812245 bytes.
+19m         Normal    Pulled                         pod/testapp-deployment-578f6f8b-z754p      Successfully pulled image "shestera/scaletestapp" in 2.397s (2.397s including waiting). Image size: 10812245 bytes.
+18m         Normal    Pulled                         pod/testapp-deployment-578f6f8b-z754p      Successfully pulled image "shestera/scaletestapp" in 4.277s (4.277s including waiting). Image size: 10812245 bytes.
+21m         Normal    SuccessfulCreate               replicaset/testapp-deployment-578f6f8b     Created pod: testapp-deployment-578f6f8b-rrwdr
+20m         Normal    SuccessfulCreate               replicaset/testapp-deployment-578f6f8b     Created pod: testapp-deployment-578f6f8b-z754p
+37m         Warning   NetworkNotReady                pod/testapp-deployment-5f6d78fb5b-fnknw    network is not ready: container runtime network not ready: NetworkReady=false reason:NetworkPluginNotReady message:docker: network plugin is not ready: cni config uninitialized
+37m         Warning   FailedMount                    pod/testapp-deployment-5f6d78fb5b-fnknw    MountVolume.SetUp failed for volume "kube-api-access-hpmz4" : object "default"/"kube-root-ca.crt" not registered
+37m         Normal    SandboxChanged                 pod/testapp-deployment-5f6d78fb5b-fnknw    Pod sandbox changed, it will be killed and re-created.
+37m         Normal    Pulling                        pod/testapp-deployment-5f6d78fb5b-fnknw    Pulling image "shestera/scaletestapp"
+37m         Normal    Pulled                         pod/testapp-deployment-5f6d78fb5b-fnknw    Successfully pulled image "shestera/scaletestapp" in 4.237s (4.237s including waiting). Image size: 10812245 bytes.
+37m         Normal    Created                        pod/testapp-deployment-5f6d78fb5b-fnknw    Created container testapp
+37m         Normal    Started                        pod/testapp-deployment-5f6d78fb5b-fnknw    Started container testapp
+27m         Normal    Killing                        pod/testapp-deployment-5f6d78fb5b-fnknw    Stopping container testapp
+27m         Normal    SuccessfulDelete               replicaset/testapp-deployment-5f6d78fb5b   Deleted pod: testapp-deployment-5f6d78fb5b-fnknw
+27m         Normal    ScalingReplicaSet              deployment/testapp-deployment              Scaled up replica set testapp-deployment-5485756fb to 1
+27m         Normal    ScalingReplicaSet              deployment/testapp-deployment              Scaled down replica set testapp-deployment-5f6d78fb5b to 0 from 1
+21m         Normal    ScalingReplicaSet              deployment/testapp-deployment              Scaled up replica set testapp-deployment-578f6f8b to 1
+21m         Normal    ScalingReplicaSet              deployment/testapp-deployment              Scaled down replica set testapp-deployment-5485756fb to 0 from 1
+20m         Normal    ScalingReplicaSet              deployment/testapp-deployment              Scaled up replica set testapp-deployment-578f6f8b to 2 from 1
+11h         Warning   FailedGetResourceMetric        horizontalpodautoscaler/testapp-hpa        failed to get memory utilization: missing request for memory in container testapp of Pod testapp-deployment-5f6d78fb5b-fnknw
+21m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/testapp-hpa        failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+21m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/testapp-hpa        invalid metrics (1 invalid out of 1), first error is: failed to get memory resource metric value: failed to get memory utilization: unable to get metrics for resource memory: no metrics returned from resource metrics API
+31m         Warning   FailedGetResourceMetric        horizontalpodautoscaler/testapp-hpa        failed to get memory utilization: missing request for memory in container testapp of Pod testapp-deployment-5f6d78fb5b-fnknw
+34m         Warning   FailedComputeMetricsReplicas   horizontalpodautoscaler/testapp-hpa        invalid metrics (1 invalid out of 1), first error is: failed to get memory resource metric value: failed to get memory utilization: missing request for memory in container testapp of Pod testapp-deployment-5f6d78fb5b-fnknw
